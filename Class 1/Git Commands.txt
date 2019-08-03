@@ -1,0 +1,18 @@
+GitHub:
+
+Repositary (Repo): 
+	It's like a cloud folder
+
+First download gitBash
+
+Write command in your project folder:
+1) git init (intialize an empty repo in your root folder)
+2) git add . (add your all folders/files in local git folder)
+3) git commit -m "Class 1"
+4) git remote add origin https://github.com/hasnainalimj/Developer_Academy.git (add your remote with your local project) //one time command
+5) git push -u origin master
+
+after make some changes i want to push my latest code to the server
+1) git add .
+2) git commit -m "make changes"
+3) git push -u origin master
