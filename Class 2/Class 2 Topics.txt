@@ -1,0 +1,92 @@
+Chapter 1 Structure:
+1) <html></html>
+2) <head></head>
+3) <title></title>
+4) <body></body>
+5) Paired Tags
+6) Unpaired Tags 
+7) Attributes
+
+Chapter 2 Text:
+1) Structural markup (html , head , title , body , p , h1 , etc)
+2) Semantic markup (em , i , b , strong , etc)
+3) Headings
+4) Paragraph
+5) Bold / Italic
+6) Super Script / Sub Script (sup , sub)
+7) White Spaces
+8) Line Breaks (br / hr)
+9) Strong & Emphasis (b , em)
+10) Quotations (blockqoute , q)
+11) Abbreviations (abbr)
+12) Citations & Definitions (cite , dfn)
+13) Author Details (address)
+14) Changes to Content (ins , del , s)
+
+Chapter 3 Lists:
+1) Orderd Lists (ol , li)
+2) Unorderd Lists (ul , li)
+3) Defination Lists (dl , dt , dd)
+4) Nested Lists
+
+Chapter 4 Links:
+1) Creating links between pages
+2) Linking to other sites
+3) Email links
+4) Link Tag and their attributes
+5) Read Page 82
+6) Email Links (<a href="mailto:jon@example.org">Email Jon</a>)
+7) Opening Links in a New Window
+8) Linking to a Specific Part of the Same Page
+
+Chapter 5 Images:
+1) Storing Images on Your Site
+2) Adding Images (img , src , alt , title)
+3) Height & Width of Images
+4) Aligning Images (top , right , bottom , left ,  middle)
+5) HTML5: Figure and Figure Caption (figure , figcaption)
+
+Chapter 6 Tables:
+1) Basic Table Structure (table , th , tr , td)
+2) Spanning Columns (col-span) used in td
+3) Spanning Rows (row-span) used in td
+4) Long Tables (thead , tbody)
+
+Chapter 7 Forms:
+1) Form Structure (form , action , method)
+2) Text Input (input , type="text" , maxlength)
+3) Password Input (input , type="password" , maxlength)
+4) Text Area (textarea , cols , rows)
+5) Radio Button (input , type="radio" , name , value , checked)
+6) Checkbox (input , type="checkbox" , name , value , checked)
+7) Drop Down List Box (select , option , selected , value)
+8) Multiple Select Box (select , option , selected , value , size , multiple)
+9) File Input Box (input , type="file")
+10) Submit Button (input , type="submit" , name , value)
+11) Image Button (input , type="image")
+12) Button & hidden Controls (button , type="hidden")
+13) Labelling Form Controls (label , for)
+14) Grouping Form Elements (fieldset , legend)
+15) HTML5: Form Validation (required)
+16) HTML5: Date Input (input , type="date")
+17) HTML5: Email & URL Input (input , type="email")
+18) HTML5: Search Input (input , type="search")
+19) Placeholder
+
+Chapter 8 Extra Markups:
+1) DOCTYPE (xhtml , html , xml , etc)
+2) Comments in HTML (<!-- -->)
+3) ID Attribute
+4) Class Attribute
+5) Block Elements
+6) Inline Elements
+7) Grouping Text & Elements In a Block (div)
+8) Grouping Text & Elements Inline (span)
+9) IFrames (iframe , width , height , src , scrolling , frameborder , seamless)
+10) Read yourself page 190-194
+
+Chapter 9 Flash, Video & Audio:
+1) Video (video , src , poster , width , height , controls , preload , none , loop)
+2) HTML5: Multiple Video Sources (source , src , type) inside video tag
+3) HTML5: Adding HTML5 Audio to Your Pages (audio , src , controls , preload , loop , autoplay)
+4) HTML5: Multiple Audio Sources (source , src , type) inside audio tag
