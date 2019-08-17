@@ -1,0 +1,171 @@
+Chapter 10 Introduction to CSS:
+1) Rules with the html element ( p { color : "red"; }) // selector , declaration
+2) How elements are displayed ( h1 , h2 , h3 { font-weight : "bold"; }) // selectors , property , value
+3) Internal CSS (style , type)
+4) External CSS (link , href , type , rel)
+5) Inline CSS (style)
+6) CSS Selectors : we have 8 common selectors
+	a) Universal Selector
+		-> Applies to all elements in the document
+		-> * (selector)
+
+	b) Type Selector
+		-> Matches all elements names
+		-> h1 , h2 , p {}
+
+	c) Class Selector
+		-> Targets any element whose class attribute has a value of note
+		-> . (selector)
+		-> p.note {} (Targets only <p> elements whose class attribute has a value of note)
+
+	d) Id Selector
+		-> Targets the element whose id attribute has a value of introduction
+		-> # (selector)
+
+	e) Child Selector
+		-> Targets any <a> elements that are children of an <li> element (but not other <a> elements in the page)
+		-> li>a {} (selector)
+
+	f) Descendant SeLector
+		-> Targets any <a> elements that sit inside a <p> element, even if there are other elements nested between them
+		-> p a {} (selector)
+
+	g) Adjacent Sibling Selector
+		-> Targets the first <p> element after any <h1> element (but not other <p> elements)
+		-> h1+p {} (selector)
+
+	h) General Sibling Selector
+		-> If you had two <p> elements that are siblings of an <h1> element, this rule would apply to both
+		-> h1~p {} (selector)
+
+7) CSS case-sensitive
+8) Important (!important)
+9) Inheritance
+
+
+
+Chapter 11 Color:
+1) Foreground Color (color)
+2) RGB values {color: rgb(100,100,90)}
+3) HEX Codes {color : #000}
+4) Color Names {color : blue}
+5) Background Color (background-color)
+6) CSS3 : Opacity (opacity , rgba) p {opacity: 0.5} || div { background-color : rgba(0,0,0,0.5)}
+
+
+
+Chapter 12 Text:
+1) Specifying Typefaces (font-family) {font-family: Arial, Verdana, sans-serif;}
+2) Size of Type (font-size) {font-size: 12px}
+3) Size Units (px , % , em)
+4) Bold (font-weight) {values : normal , bold }
+5) Italic (font-style) {values : normal , italic , oblique} 
+6) Uppercase & Lowercase (text-transform) {values : uppercase , lowercase, capitalize}
+7) Underline & Strike (text-decoration) {values : none , underline , overline , line-through , blink}
+8) Leading (line-height) {line-height : 1.2em} //specify spaces between lines
+9) Letter & Word Spacing {letter-spacing : 2.0em} {word-spacing : 1.0em}
+10) Alignment (text-align) {values : left , right , justify , center}
+11) Vertical Alignment (vertical-align) {values : baseline , sub , super , top , text-top , middle , bottom , text-bottom}
+12) Indenting Text (text-indent) h1 { text-indent : -100px}
+13) CSS3 : Dropshadow (text-shadow)
+14) (text-shadow) accepts 4 values p{text-shadow : 1px 2px 3px #000}
+	a) first one is position of the shadow from left to right
+	b) second is position of the shadow from top to bottom
+	c) third is optional but it's uses for shadow blur
+	d) last one is for the shadow color
+15) First Letter & First Line (:first-letter , :first-line)
+	a) p:first-letter{ font-size : 20px}
+	b) p:first-line{ font-style : italic} 
+16) Styling Links (:link , :visited)
+	a) a:link{ color : red}
+	b) a:visited{ color : green }
+17) Responding to Users (:hover , :active , :focus)
+	a) div:hover { background-color : yellow }
+	b) .myWrapper:active { background-color : red }
+	c) input:focus { color : blue }
+
+18) Attributes Selectors: we have six attributes selector
+	a) Existence
+		-> p[class]
+		-> Targets any <p> element with an attribute called class
+	b) Equality
+		-> p[class="dog"] 
+		-> Targets any <p> element with an attribute called class whose value is dog
+	c) Space
+		-> p[class~="dog"]
+		-> Targets any <p> element with an attribute called class whose value is a list of space-separated words, one of which is dog
+	d) Prefix
+		-> p[attr^"d"] 
+		-> Targets any <p> element with an attribute whose value begins with the letter "d"
+	e) Substring
+		-> p[attr*"do"]
+		-> Targets any <p> element with an attribute whose value contains the letters "do"
+	f) Suffix
+		-> p[attr$"g"]
+		-> Targets any <p> element with an attribute whose value ends with the letter "g"
+
+
+
+Chapter 13 Boxes:
+1) Box Dimensions (width , height)
+2) Limiting Width (min-width , max-width)
+3) Limiting Height (min-height , max-height)
+4) Overflow Content (overflow) {values : hidden , scroll}
+5) Margin (margin)
+6) Padding (padding)
+7) Border Width (border-width)
+8) Border Style (border-style)
+9) Border Color (border-color)
+10) Shorthand (border , padding , margin)
+11) Centering Content
+12) Change Inline/Block (display) {values : inline , block , inline-block , none}
+13) Hiding Box (visibility) {values : hidden , visible}
+14) Box Shadows (box-shadow) accepts 5 values div{ box-shadow : 12px 10px 8px 2px #000}
+	a) Horizontal Offset
+	b) Vertical Offset
+	c) Blur Distance
+	d) Spread of Shadow
+	e) Color of Shadow
+15) Rounded Corners (border-radius)
+	
+
+
+Chapter 14 Lists, Tables & Forms:
+1) Bullets Point Styles (list-style-type)
+	a) Unordered Lists {values : none , disc , circle , square}
+	b) Ordered Lists {values : decimal , decimal-leading-zero , lower-alpha , upper-roman}
+2) Images for Bullets (list-style-image) ul{list-style-image: url("images/star.png")} 
+3) Positioning the Market (list-style-position) ul{list-style-position: inside/outside}
+4) List Shorthand (list-style) ul { list-style: inside circle; width: 300px;}
+5) Table Properties (width , padding , text-transform , letter-spacing , font-size , border-top , border-bottom , text-align , background-color , :hover)
+6) Border Empty Cells (empty-cells) table{empty-cells : show/hide}
+7) Gaps Between Cells (border-spacing , border-collapse) table.one { border-spacing: 5px 15px;} table.two { border-collapse: collapse;}
+8) Styling Text Inputs (width , height , background-color , color , border , border-radius , :focus , background-image : url("images/web.png"))
+9) Styling Submit Buttons (width , height , background-color , color , border , border-radius , :hover , text-shadow)
+10) Cursor Styles (cursor) {values : auto/crosshair/default/pointer/move/text/wait/help/url("cursor.gif")}
+11) Web Developer Tool
+
+
+
+
+Chapter 15 Layout:
+1) Normal Flow (postion)
+	a) static (Default)
+	b) relative (behave same as static but you can change it's direction easily using {top , right , bottom , left})
+	c) absolute (behave an independent element can change it's direction using {top , right , bottom , left})
+	d) fixed (fixed the postion of the element)
+2) Overlapping Elements (z-index) default is 0
+3) Floating Elements (float) {values : left , right}
+4) A Liquid Layout
+5) Multiple Style Sheets
+	a) link into html file
+	b) import your css file in the other css file like (@import url("tables.css"); @import url("typography.css");)
+
+
+
+Chapter 16 Images:
+1) Size of Images (width , height)
+2) Center Image using CSS img{display : block; margin : 0px auto}
+3) Backgroud Image (background-image) body { background-image: url("images/pattern.gif");}
+4) Repeat Images (background-repeat) {values : repeat , repeat-x , repeat-y , no-repeat , fixed , scroll}
+5) Background Position (background-position) {values :  left top, left center, left bottom, center top, center center, center bottom, right top, right center, right bottom}
