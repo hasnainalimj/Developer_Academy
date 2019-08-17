@@ -1,0 +1,235 @@
+/*Common Selectors*/
+
+/*Universal Selector*/
+*{
+    margin: 0;
+    /* padding: 0; */
+}
+
+/*Type Selector*/
+h1{
+    color: red
+}
+
+/*Class Selector*/
+.class-selector{
+    color: blue 
+}
+
+.etc{
+    color: red;
+}
+
+.example{
+    color : black
+}
+
+.xyz{
+    color: yellow
+}
+
+/*Id Selector*/
+#id-selector{
+    color: green
+}
+
+/*Child Selector*/
+.child-selector > p{
+    font-weight: bold;
+}
+
+/*Firsrt Child Selector*/
+.child-selector :first-child{
+    /* color : yellow */
+    font-size: 50px;
+}
+
+/*Last Child Selector*/
+.child-selector :last-child{
+    color : orange;
+    font-size: 50px;
+}
+
+.child-selector :nth-last-child(1){
+    font-size: 40px;
+    color: green
+}
+
+/*Descendant Selector*/
+.descendant-selector{
+    font-size: 20px;
+    color: red;
+}
+
+/*Adjacent Selector*/
+span+h1{
+    text-decoration: underline;
+}
+
+/* H1{
+    COLOR : GREY !important
+} */
+
+
+/*Attribute Selectors*/
+
+/*Existence Attribute Selector*/
+p[class]{
+    color : red
+}
+
+p[id]{
+    color: blue;
+}
+
+/*Equality Attribute Selector*/
+p[class = "equality-attribute-selector"]{
+    font-size: 24px;
+}
+
+p[id = "equality-attribute-selector-with-idAttribute"]{
+    font-size: 24px;
+}
+
+/*Space Attribute Selector*/
+p[class~="dog"]{
+    font-weight: bold;
+}
+
+/*Prefix Attribute Selector*/
+p[class^="h"]{
+    font-size: 40px;
+}
+
+/*Substring Attribute Selector*/
+/* p[class*="do"]{
+    color: grey;
+    font-weight: bold;
+    text-decoration: underline
+} */
+
+/*Suffix Attribute Selector*/
+h5[class$="g"]{
+    color: blue;
+}
+
+
+p{
+    color : "red"
+}
+
+/* h1{
+    color: green !important;
+} */
+
+
+.a h4 {
+    color : yellow;
+}
+
+/* A {
+    color: RED;
+} */
+
+/* #hi{
+    COLOR : black;
+} */
+
+.wrapper{
+    width: 100%;
+    height: 100vh;
+    background-color: red;
+    /* display: flex; */
+    color:yellow
+}
+
+.child{
+    width: inherit;
+    height: 10px;
+    /* background-color: blue; */
+    /* display: inherit */
+}
+
+.b{
+    font-size: 30px;
+    text-shadow: 10px 10px 5px grey;
+    /* color: red */
+    /* color: #333333 */
+    /* color: rgb(100,100,90);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 200;
+    text-transform: capitalize;
+    text-decoration: line-through */
+    /* line-height : 1.2em; */
+    /* letter-spacing : 2.0em */
+    /* word-spacing: 0.2em; */
+    /* text-align: right */
+    /* vertical-align: middle;
+    text-indent : 100px */
+}
+
+.b:first-letter{
+    font-size: 60px !important;
+}
+
+.myBox{
+    width: 100px;
+    height: 100px;
+    /* background-color: red;
+    opacity: 0.5 */
+    /* background-color : rgba(100,100,90 , 0.2) */
+    /* background-image: linear-gradient(red, yellow) */
+}
+
+.anchor:link{
+    color: red
+}
+
+.anchor:visited{
+    color: blue
+}
+
+.abc{
+    width: 100px;
+    height: 100px;
+    background-color: orange;
+    transition: 2s
+}
+
+.abc:hover{
+    background-color: green
+}
+
+.abc:active{
+    background-color: red
+}
+
+/*Always apply on input*/
+/* .abc:focus{
+    background-color: black
+} */
+
+
+/* p[class]{
+    font-size: 100px;
+}
+
+p[class="king"]{
+    font-size: 50px;
+    color: brown !important;
+}
+
+p[class~="dog"]{
+    font-size: 50px;
+    color: yellow
+} */
+
+/* p[class*="do"]{
+    font-weight: bold;
+    color: black;
+} */
+
+
+p[class$="o"]{
+    font-style: italic
+}

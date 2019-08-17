@@ -34,10 +34,6 @@ Chapter 10 Introduction to CSS:
 		-> Targets the first <p> element after any <h1> element (but not other <p> elements)
 		-> h1+p {} (selector)
 
-	h) General Sibling Selector
-		-> If you had two <p> elements that are siblings of an <h1> element, this rule would apply to both
-		-> h1~p {} (selector)
-
 7) CSS case-sensitive
 8) Important (!important)
 9) Inheritance
@@ -95,13 +91,13 @@ Chapter 12 Text:
 		-> p[class~="dog"]
 		-> Targets any <p> element with an attribute called class whose value is a list of space-separated words, one of which is dog
 	d) Prefix
-		-> p[attr^"d"] 
+		-> p[attr^="d"] 
 		-> Targets any <p> element with an attribute whose value begins with the letter "d"
 	e) Substring
-		-> p[attr*"do"]
+		-> p[attr*="do"]
 		-> Targets any <p> element with an attribute whose value contains the letters "do"
 	f) Suffix
-		-> p[attr$"g"]
+		-> p[attr$="g"]
 		-> Targets any <p> element with an attribute whose value ends with the letter "g"
 
 
@@ -152,7 +148,7 @@ Chapter 15 Layout:
 1) Normal Flow (postion)
 	a) static (Default)
 	b) relative (behave same as static but you can change it's direction easily using {top , right , bottom , left})
-	c) absolute (behave an independent element can change it's direction using {top , right , bottom , left})
+	c) absolute (behave like an independent element can change it's direction using {top , right , bottom , left})
 	d) fixed (fixed the postion of the element)
 2) Overlapping Elements (z-index) default is 0
 3) Floating Elements (float) {values : left , right}
@@ -166,6 +162,6 @@ Chapter 15 Layout:
 Chapter 16 Images:
 1) Size of Images (width , height)
 2) Center Image using CSS img{display : block; margin : 0px auto}
-3) Backgroud Image (background-image) body { background-image: url("images/pattern.gif");}
+3) Background Image (background-image) body { background-image: url("images/pattern.gif");}
 4) Repeat Images (background-repeat) {values : repeat , repeat-x , repeat-y , no-repeat , fixed , scroll}
 5) Background Position (background-position) {values :  left top, left center, left bottom, center top, center center, center bottom, right top, right center, right bottom}
