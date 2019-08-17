@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tabs</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div class="tabsContainer">
+        <div class="tabs" id="tab1" onclick='_handleTab("tab1")' style="background-color: green">
+            <p class="tabsText">Contacts</p>
+        </div>
+        <div class="tabs" id="tab2" onclick='_handleTab("tab2")'>
+            <p class="tabsText">Chats</p>
+        </div>
+        <div class="tabs" id="tab3" onclick='_handleTab("tab3")'>
+            <p class="tabsText">Stories</p>
+        </div>
+    </div>
+    <div class="contactsWrapper" id="detail1">
+        <h1>Contacts</h1>
+    </div>
+    <div class="chatsWrapper" id="detail2">
+        <h1>Chats</h1>
+    </div>
+    <div class="storiesWrapper" id="detail3">
+        <h1>Stories</h1>
+    </div>
+</body>
+<script src="js/app.js"></script>
+
+</html>

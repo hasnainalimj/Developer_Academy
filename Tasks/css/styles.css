@@ -1,0 +1,62 @@
+/* *{
+    margin: 0;
+    padding: 0;
+} */
+
+.tabsContainer{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.tabs{
+    width: 30%;
+    height: 100%;
+    background-color: grey;
+    cursor: pointer;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 1s;
+}
+
+.tabsText{
+    font-size: 1.5em;
+    color: white;
+}
+
+.contactsWrapper{
+    width: 100%;
+    height: 500px;
+    background-color: red;
+    border-radius: 25px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+
+.chatsWrapper{
+    width: 100%;
+    height: 500px;
+    background-color: green;
+    border-radius: 25px;
+    margin-top: 10px;
+    display: none;
+    justify-content: center;
+    align-items: center;    
+}
+
+.storiesWrapper{
+    width: 100%;
+    height: 500px;
+    background-color: blue;
+    border-radius: 25px;
+    margin-top: 10px;
+    display: none;
+    justify-content: center;
+    align-items: center;    
+}
