@@ -5,6 +5,7 @@ Chapter 10 Introduction to CSS:
 4) External CSS (link , href , type , rel)
 5) Inline CSS (style)
 6) CSS Selectors : we have 8 common selectors
+
 	a) Universal Selector
 		-> Applies to all elements in the document
 		-> * (selector)
