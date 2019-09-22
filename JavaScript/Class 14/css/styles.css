@@ -1,0 +1,12 @@
+.hide{
+    display: none;
+}
+
+.dummy{
+    text-decoration: underline;
+}
+
+.para{
+    font-size: 50px;
+    color: blue;
+}
