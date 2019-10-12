@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Class 19
+    </title>
+</head>
+
+<body>
+    <form onSubmit="checkForLastName(event);"> Please enter your last name.<br>
+        <input type="text" id="lastNameField">
+        <input type="submit" value="Submit Form">
+    </form>
+
+
+    <form onSubmit="return checkForSelection(event);">
+        <select id="states">
+            <option value="" selected="selected"> SELECT A STATE</option>
+            <option value="AL">Alabama</option>
+            <option value="AK">Alaska</option>
+            <option value="AZ">Arizona</option>
+            <option value="AR">Arkansas</option>
+        </select>&nbsp;&nbsp; <input type="submit" value="Submit Form">
+    </form>
+
+    <form onSubmit="return validateRadios(event);">
+        <input type="radio" name="r1" value="cat">Cat<br> <input type="radio" name="r1" value="bat"> Bat<br>
+        <input type="radio" name="r1" value="hat"> Hat<br> <input type="submit" value="Submit Form">
+    </form>
+
+    <input type="text" id="address">
+    <button onclick="validateEmail()">Check</button>
+
+
+</body>
+<script src="js/app.js">
+</script>
+
+</html>
