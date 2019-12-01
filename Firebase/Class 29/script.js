@@ -1,12 +1,4 @@
-var firebaseConfig = {
-  apiKey: "AIzaSyCpgGg_dpByQJK0NWabKK0ipG0LUDtC68s",
-  authDomain: "testing-dev-academy.firebaseapp.com",
-  databaseURL: "https://testing-dev-academy.firebaseio.com",
-  projectId: "testing-dev-academy",
-  storageBucket: "testing-dev-academy.appspot.com",
-  messagingSenderId: "813716802205",
-  appId: "1:813716802205:web:233afddf2abbc19b1be274"
-};
+var firebaseConfig = {};
 
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
