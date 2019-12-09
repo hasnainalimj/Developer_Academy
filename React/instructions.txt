@@ -1,0 +1,17 @@
+Configuration React App:
+1) Download Node.js (10.16.0) 
+2) NPM (6.9.0)
+3) Using NPM we need to install Pre-Boilerplate
+which is create-react-app
+
+Versions :
+node -v
+npm -v
+
+4) Run cmd as administrator
+5) npm install -g create-react-app
+
+Versions :
+create-react-app --version
+
+6) npm or yarn / start 
