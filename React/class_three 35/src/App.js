@@ -37,14 +37,14 @@ export default class App extends React.Component {
     // this.showMeValue = this.showMeValue.bind("this");
   }
 
-  // showMeValue(value){
-  //   console.log("TCL: App -> showMeValue -> value", value)
-  //   console.log(this)
-  // }
+  showMeValue(value){
+    console.log("TCL: App -> showMeValue -> value", value)
+    console.log(this)
+  }
 
-  showMeValue = (value, index) => {
-    console.log(value + index);
-  };
+  // showMeValue = (value, index) => {
+  //   console.log(value + index);
+  // };
 
   deleteItem = ind => {
     let items = this.state.list;
@@ -57,7 +57,7 @@ export default class App extends React.Component {
       <div>
         {this.state.list.map((val, index) => {
           // return <h1 key={index} onClick={this.showMeValue.bind(this , val)}>{val}</h1>;
-          // return <h1 key={index} onClick={this.showMeValue}>{val}</h1>;
+          return <h1 key={index} onClick={this.showMeValue}>{val}</h1>;
           // return (
           //   <h1 key={index} onClick={() => this.showMeValue(val, index)}>
           //     {val}
