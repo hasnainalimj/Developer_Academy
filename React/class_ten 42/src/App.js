@@ -112,7 +112,7 @@ export default class App extends React.Component {
               <h1>Items not found.....</h1>
             ) : (
               list.map((val, index) => {
-                // return <p>{index}</p>;
+                return <p>{index}</p>;
               })
             )}
           </React.Fragment>
