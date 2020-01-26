@@ -1,0 +1,11 @@
+.questionWrapper{
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+}
+
+.question{
+  margin-left: 5px;
+  font-size: 30px;
+}
