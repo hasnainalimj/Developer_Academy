@@ -1,0 +1,48 @@
+.parent{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper{ 
+    width: 400px;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.chatBox{
+    width: 80%;
+    min-height: 400px;
+    overflow: scroll;
+    border: 1px solid #000;
+    border-radius: 10px;
+}
+
+.inputWrapper{ 
+    width: 80%;
+    min-height: 80px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.inputBox{ 
+    width: 75%;
+    height: 50px;
+    border-radius: 10px;
+}
+
+.btnSend{
+    width: 20%;
+    height: 50px;
+    border-radius: 10px;
+}
+
+.messageText{
+    font-size: 20px
+}
