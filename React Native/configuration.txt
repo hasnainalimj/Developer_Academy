@@ -1,0 +1,15 @@
+React Native:
+
+1) Expo (React Native)
+2) Custom CLI (React Native)
+
+
+EXPO Configuration
+npm install --global expo-cli
+
+expo init project_name
+
+select any template i.e: blank
+
+expo start
+
