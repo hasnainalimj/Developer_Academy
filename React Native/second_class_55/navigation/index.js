@@ -1,4 +1,4 @@
-import { createStackNavigator, createSwitchNavigator, createAppContainer, createBottomTabNavigator } from "react-navigation"
+import { createStackNavigator, createSwitchNavigator, createAppContainer, createBottomTabNavigator, createDrawerNavigator } from "react-navigation"
 
 //Screens
 import Home from "../screens/Home"
@@ -9,11 +9,15 @@ const AuthStack = createStackNavigator({
     Login: loginScreen
 })
 
-const AppStack = createStackNavigator({
+const DrawerStack = createDrawerNavigator({
     Home,
     About
-}, {
-    initialRouteName: "Home"
+})
+
+const AppStack = createStackNavigator({
+    DrawerStack,
+    Home,
+    About
 })
 
 const navigations = createSwitchNavigator({
@@ -22,9 +26,9 @@ const navigations = createSwitchNavigator({
 })
 
 const bottomBar = createBottomTabNavigator({
-    HomeTab : Home,
-    AboutTab : About,
-    LoginTab : loginScreen
+    HomeTab: Home,
+    AboutTab: About,
+    LoginTab: loginScreen
 })
 
-export default createAppContainer(bottomBar)
+export default createAppContainer(navigations)
