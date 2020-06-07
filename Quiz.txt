@@ -1,0 +1,18 @@
+const getPreviousMonday = (date = null) => {
+	const weekDays = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']
+        let prevMonday = date && new Date(date.valueOf()) || new Date()
+        prevMonday.setDate(prevMonday.getDate() - (prevMonday.getDay() + 6) % 7)
+        prevMonday = prevMonday.toString()
+        let dayDate = Number(prevMonday.slice(8, 10))
+        const calendar = []
+        for (let i = 0; i < 7; i++) {
+            calendar.push({
+                day: weekDays[i],
+                date: dayDate++
+            })
+        }
+        console.log(calendar)
+}
+
+Q1 Explain this?
+Q2 Should be a dynamic day?
